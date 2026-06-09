@@ -42,7 +42,7 @@
     place-self: center;
   }
   .text_layer-1 {
-    top: 40%;
+    top: 15%;
   }
   .text_layer-1 h1 {
     font-size: 3rem;
@@ -89,6 +89,7 @@
 
   .tema2 h3,
   .tema4 h3 {
+    margin: 0;
     padding-left: 0;
     font-size: 20px;
     font-weight: 500;

@@ -38,7 +38,36 @@ body {
   min-height: 100svh;
 }
 
+main {
+  margin-inline: 4%;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--font-family-header);
+  color: #9ab182;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  font-size: 32px;
+}
+
+p {
+  font-family: var(--font-family-tekst);
+  font-size: 16px;
+  line-height: 1.6rem;
+  max-width: 45ch;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.afsnit {
+  padding-bottom: 10px;
+}
+
 /*************** Header *********************/
+
+/*** Portfolio Header Mobil ***/
 
 .portfolio {
   width: 95%;
@@ -46,11 +75,13 @@ body {
   margin-top: 4%;
 }
 
+/*** Menu Desktop ***/
+
 .menu_desktop {
   display: flex;
-  width: 56% !important; /* Increased from 60% to give your long name breathing room */
-  max-width: 1068px !important; /* Increased slightly to let the links breathe on huge monitors */
-  margin: 15px auto 40px auto !important;
+  width: 56%;
+  max-width: 1068px;
+  margin: 15px auto 40px auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -63,14 +94,12 @@ body {
   padding-left: 0;
 }
 
-/* Navbar container */
 .navbar {
   overflow: hidden;
   font-family: var(--font-family-tekst);
   margin-left: 0;
 }
 
-/* Links inside the navbar */
 .navbar a {
   float: left;
   font-size: 1.5rem;
@@ -80,14 +109,14 @@ body {
   text-decoration: none;
 }
 
-/* The dropdown container */
+/*** Dropdown Menu ***/
+
 .dropdown {
   float: left;
   overflow: hidden;
   z-index: 500;
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
   font-size: 1.5rem;
   border: none;
@@ -95,11 +124,10 @@ body {
   color: var(--color-nav);
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  margin: 0;
 }
 
-/* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   background-color: #bbda93;
@@ -107,7 +135,6 @@ body {
   color: #ffedf1;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -118,7 +145,6 @@ body {
   z-index: 20;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: var(--color-nav);
@@ -128,13 +154,11 @@ body {
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f795aa;
   color: #e7f7d4;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -142,18 +166,22 @@ body {
 .menu_mobil {
   display: none;
 }
+
+/*** Menu Mobil ***/
+
 @media screen and (max-width: 800px) {
-  header {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: 1fr 1fr;
-  }
   .navn_mobil {
     font-family: var(--font-family-navn);
     color: #9e2828;
     font-size: 35px;
     margin-left: 5%;
     margin-top: 2%;
+  }
+
+  .menu_mobil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .menu {
@@ -188,9 +216,7 @@ body {
     width: 30px;
     height: 20px;
     cursor: pointer;
-    justify-self: end;
     margin-right: 7%;
-    margin-top: -8%;
   }
 
   .burger .line {
@@ -201,6 +227,7 @@ body {
     margin-bottom: 5px;
     transition: 0.2s linear;
   }
+
   .menu_desktop {
     display: none;
   }
@@ -209,15 +236,12 @@ body {
     display: none;
   }
 
-  .menu_mobil {
-    display: block;
-  }
-
   .burger {
     display: block;
     background-color: transparent;
     border: 0;
   }
+
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
     transition: 0.2s linear;
@@ -254,296 +278,12 @@ body {
   }
 }
 
-/*************** Main *********************/
-
-main {
-  margin-inline: 4%;
-}
-
-h1 {
-  text-align: center;
-  font-family: var(--font-family-header);
-  color: #9ab182;
-  margin-bottom: 80px;
-  font-size: 35px;
-}
-
-.tema2 {
-  background-image: url(illutrationer/SVG/pink2.svg);
-}
-.tema3 {
-  background-image: url(illutrationer/SVG/gul2.svg);
-  background-repeat: no-repeat;
-  padding-bottom: 130px;
-  position: relative;
-  z-index: 1;
-}
-.tema4 {
-  background-image: url(illutrationer/SVG/darkpink2.svg);
-}
-.tema5 {
-  background-image: url(illutrationer/SVG/green2.svg);
-}
-.tema2,
-.tema4,
-.tema5 {
-  background-repeat: no-repeat;
-  padding-bottom: 5px;
-  position: relative;
-  z-index: 1;
-}
-.tema2,
-.tema3,
-.tema4,
-.tema5 {
-  font-family: var(--font-family-tekst);
-}
-
-.tema2 h2,
-.tema4 h2 {
-  max-width: 45ch;
-  margin: 0 auto;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 15px;
-  padding-left: 43px;
-}
-
-.tema2 h3,
-.tema4 h3 {
-  max-width: 45ch;
-  margin: 0 auto;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 30px;
-  padding-left: 15px;
-}
-
-.tema3 h2,
-.tema5 h2 {
-  max-width: 45ch;
-  margin: 0 auto;
-  text-align: right;
-  box-sizing: border-box;
-  padding-top: 15px;
-  padding-right: 43px;
-}
-
-.tema3 h3,
-.tema5 h3 {
-  max-width: 45ch;
-  margin: 0 auto;
-  text-align: left;
-  box-sizing: border-box;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-}
-
-.mig h2,
-.semester1 h2 {
-  padding-bottom: 10px;
-}
-
-.tema3_formol {
-  padding-top: 90px;
-}
-
-.tema2_note h3 {
-  padding-bottom: 0.5rem;
-}
-
-p {
-  font-family: var(--font-family-tekst);
-  font-size: 16px;
-  line-height: 1.6rem;
-  max-width: 45ch;
-  text-align: left;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-}
-
-.afsnit {
-  padding-bottom: 10px;
-}
-
-.tema2_img,
-.tema2_img_galleri,
-.tema3_img,
-.tema3_img_galleri,
-.tema4_img,
-.tema4_img_galleri,
-.tema5_img,
-.tema5_img_galleri {
-  background-image: url(images/folder.svg);
-  background-repeat: no-repeat;
-  margin-top: 100px;
-  margin-bottom: 30px;
-}
-
-.tema2_note,
-.tema3_note,
-.tema4_note,
-.tema5_note {
-  background-image: url(illutrationer/SVG/notepink.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.tema2_note_long,
-.tema3_note_long,
-.tema4_note_long,
-.tema5_note_long,
-.mig,
-.semester1 {
-  background-image: url(illutrationer/SVG/notepink.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-top: 70px;
-  padding-bottom: 80px;
-}
-
-.tekst_header h2 {
-  font-family: var(--font-family-header);
-  font-weight: 600;
-  padding-bottom: -80px;
-  color: #9ab182;
-}
-.tema2_note_long h3,
-.tema3_note h3,
-.tema3_note_long h3,
-.tema4_note h3,
-.tema4_note_long h3,
-.tema5_note_long h3,
-.mig h3,
-.semester1 h3 {
-  font-family: var(--font-family-header);
-  font-weight: 400;
-  color: #9ab182;
-  max-width: 45ch;
-  margin: 0 auto;
-  text-align: left;
-  box-sizing: border-box;
-  padding-left: 0;
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-.tema2_site {
-  background-image: url(illutrationer/link_tema2.svg);
-}
-.tema3_site {
-  background-image: url(illutrationer/link_tema3.svg);
-}
-.tema4_site {
-  background-image: url(illutrationer/link_tema4.svg);
-}
-.tema5_site {
-  background-image: url(illutrationer/link_tema5.svg);
-}
-.tema2_site,
-.tema3_site,
-.tema4_site,
-.tema5_site {
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: center;
-  margin-bottom: 10px;
-  margin-top: 70px;
-  padding-inline: 50px;
-  padding-block: 40px;
-  text-align: center;
-}
-
-.tema2_site a,
-.tema3_site a,
-.tema4_site a,
-.tema5_site a {
-  text-decoration: none;
-  font-family: var(--font-family-tekst);
-  font-size: 20px;
-  color: rgb(66, 66, 66);
-  font-weight: 600;
-}
-.tema2_site a:hover {
-  color: #f795aa;
-}
-.tema3_site a:hover {
-  color: #f4d47b;
-}
-.tema4_site a:hover {
-  color: #fa84a1;
-}
-.tema5_site a:hover {
-  color: #8eaa6a;
-}
-
-/*************** Footer *********************/
-
-footer {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
-  background-color: #d4ebc3;
-  border-block: 1.5px solid #9ab486;
-  justify-items: center;
-  align-items: center;
-  position: relative;
-  margin-top: 120px;
-  padding-block: 40px;
-}
-
-.notes {
-  width: 90%;
-  max-width: 500px;
-  z-index: 50;
-  rotate: 4deg;
-  position: relative;
-  justify-self: center;
-}
-
-.kontakt {
-  font-weight: 400;
-  margin-top: -70px;
-}
-
-.kontakt_text {
-  position: relative;
-  margin-top: -160px;
-  left: 25px;
-  z-index: 100;
-}
-
-.kontakt p {
-  font-family: var(--font-family-navn);
-  font-size: 20px;
-  line-height: 1rem;
-}
-
-.kontakt h5 {
-  font-family: var(--font-family-navn);
-  font-size: 28px;
-  letter-spacing: 4px;
-  font-weight: 400;
-  rotate: -10deg;
-  padding-bottom: 30px;
-  padding-left: 10px;
-}
-
-footer a {
-  width: 70%;
-}
+/*************** Forside *********************/
 
 .mapper {
   position: relative;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 90px;
 }
 
 .layer-1 {
@@ -594,7 +334,6 @@ footer a {
   font-family: var(--font-family-tekst);
   color: #353535;
 }
-
 .text_layer-1 {
   position: absolute;
   bottom: 18%;
@@ -641,6 +380,216 @@ footer a {
   transition: 0.5s;
 }
 
+/*************** Projekt Sider/Tema Sider *********************/
+
+/*** Tema 4 h1 ***/
+
+.tema4_h1 {
+  font-size: 28px;
+}
+.tema4_h1 span {
+  font-size: 32px;
+}
+
+/*****************/
+
+/*** Tema Formål & Overskifter ***/
+
+.tema2 {
+  background-image: url(illutrationer/SVG/pink2.svg);
+  padding-bottom: 5px;
+}
+.tema3 {
+  background-image: url(illutrationer/SVG/gul2.svg);
+  padding-bottom: 130px;
+}
+.tema4 {
+  background-image: url(illutrationer/SVG/darkpink2.svg);
+  padding-bottom: 5px;
+}
+.tema5 {
+  background-image: url(illutrationer/SVG/green2.svg);
+  padding-bottom: 5px;
+}
+.tema2,
+.tema3,
+.tema4,
+.tema5 {
+  font-family: var(--font-family-tekst);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.tema2 h2,
+.tema4 h2 {
+  max-width: 45ch;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-left: 45px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tema3 h2,
+.tema5 h2 {
+  max-width: 45ch;
+  margin: 0 auto;
+  text-align: right;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-right: 45px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tema2 h3,
+.tema3 h3,
+.tema4 h3,
+.tema5 h3 {
+  max-width: 45ch;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tema3_formol {
+  padding-top: 90px;
+}
+
+/*** Tema Billeder & Tekst ***/
+
+.tema2_img,
+.tema2_img_galleri,
+.tema3_img,
+.tema3_img_galleri,
+.tema4_img,
+.tema4_img_galleri,
+.tema5_img,
+.tema5_img_galleri {
+  background-image: url(images/folder.svg);
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.tema2_note,
+.tema3_note,
+.tema4_note,
+.tema5_note {
+  background-image: url(illutrationer/SVG/notepink.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tema2_note_long,
+.tema3_note_long,
+.tema4_note_long,
+.tema5_note_long,
+.mig,
+.semester1 {
+  background-image: url(illutrationer/SVG/notepink.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.tekst_header h2 {
+  font-family: var(--font-family-header);
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: -80px;
+  color: #9ab182;
+}
+
+.tema2_note_long h3,
+.tema3_note h3,
+.tema3_note_long h3,
+.tema4_note h3,
+.tema4_note_long h3,
+.tema5_note_long h3,
+.mig h3,
+.semester1 h3 {
+  font-family: var(--font-family-header);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #9ab182;
+  max-width: 45ch;
+  margin: 0 auto;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+/*** Link Til Sites ***/
+
+.tema2_site {
+  background-image: url(illutrationer/link_tema2.svg);
+}
+.tema3_site {
+  background-image: url(illutrationer/link_tema3.svg);
+}
+.tema4_site {
+  background-image: url(illutrationer/link_tema4.svg);
+}
+.tema5_site {
+  background-image: url(illutrationer/link_tema5.svg);
+}
+
+.tema2_site,
+.tema3_site,
+.tema4_site,
+.tema5_site {
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  margin-bottom: 10px;
+  margin-top: 70px;
+  padding-inline: 50px;
+  padding-block: 40px;
+  text-align: center;
+}
+
+.tema2_site a,
+.tema3_site a,
+.tema4_site a,
+.tema5_site a {
+  text-decoration: none;
+  font-family: var(--font-family-tekst);
+  font-size: 20px;
+  color: rgb(66, 66, 66);
+  font-weight: 600;
+}
+.tema2_site a:hover {
+  color: #f795aa;
+}
+.tema3_site a:hover {
+  color: #f4d47b;
+}
+.tema4_site a:hover {
+  color: #fa84a1;
+}
+.tema5_site a:hover {
+  color: #8eaa6a;
+}
+
+/*************** Om Mig *********************/
+
 .portrait_wrapper {
   display: block;
   margin-inline: auto;
@@ -648,24 +597,24 @@ footer a {
   aspect-ratio: 557/657;
   height: auto;
 }
-.potrait_group {
+.portrait_group {
   position: relative;
 }
 .portrait {
   position: absolute;
-  width: 80%;
+  width: 100%;
 }
 .pinkblomst {
   position: absolute;
-  width: 80%;
+  width: 100%;
 }
 .lillablomst {
   position: absolute;
-  width: 80%;
+  width: 100%;
 }
 .portrait_note {
   position: absolute;
-  width: 80%;
+  width: 100%;
 }
 .om_mig {
   position: absolute;
@@ -682,15 +631,15 @@ footer a {
 }
 .gulblomst {
   position: absolute;
-  width: 80%;
+  width: 100%;
 }
 
 .mig {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 .semester1 {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 .kompetencer {
   display: grid;
@@ -704,4 +653,65 @@ footer a {
 
 .ikoner {
   width: 35%;
+}
+
+.mig h2,
+.semester1 h2 {
+  padding-bottom: 10px;
+}
+
+/*************** Footer *********************/
+
+footer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  background-color: #d4ebc3;
+  border-block: 1.5px solid #9ab486;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  margin-top: 140px;
+  padding-block: 40px;
+}
+
+.notes {
+  width: 90%;
+  max-width: 500px;
+  z-index: 50;
+  rotate: 4deg;
+  position: relative;
+  justify-self: center;
+}
+
+.kontakt {
+  font-weight: 400;
+  margin-top: -70px;
+}
+
+.kontakt_text {
+  position: relative;
+  margin-top: -160px;
+  left: 25px;
+  z-index: 100;
+}
+
+.kontakt p {
+  font-family: var(--font-family-navn);
+  font-size: 20px;
+  line-height: 1rem;
+}
+
+.kontakt h5 {
+  font-family: var(--font-family-navn);
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  rotate: -10deg;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+footer a {
+  width: 70%;
 }
