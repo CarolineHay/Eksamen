@@ -7,4 +7,90 @@
   .tema2_img {
     order: 1;
   }
+  main {
+    margin-inline: 10%;
+  }
+  .portfolio {
+    width: 60%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .menu_desktop {
+    margin-bottom: 70px;
+  }
+  .mapper {
+    display: grid;
+  }
+
+  .layer-1,
+  .layer-2,
+  .layer-3,
+  .layer-4,
+  .layer-5,
+  .layer-6 {
+    width: 60%;
+    place-self: center;
+  }
+  .text_layer-1 {
+    top: 40%;
+  }
+  .text_layer-1 h1 {
+    font-size: 3rem;
+  }
+  .text_layer-2,
+  .text_layer-3,
+  .text_layer-4,
+  .text_layer-5 {
+    font-size: 1.5rem;
+  }
+
+  .tema2 {
+    background-image: url(illutrationer/tema2_folder.svg);
+  }
+  .tema3 {
+    background-image: url(illutrationer/tema3_folder.svg);
+  }
+  .tema4 {
+    background-image: url(illutrationer/tema4_folder.svg);
+  }
+  .tema5 {
+    background-image: url(illutrationer/tema5_folder.svg);
+  }
+  .tema2,
+  .tema3,
+  .tema4,
+  .tema5 {
+    background-position: center;
+    width: 100%;
+  }
+
+  .tema_tekst p {
+    max-width: 65ch;
+  }
+
+  .tema4 footer {
+    margin-top: 150px;
+  }
+
+  footer a {
+    width: 40%;
+  }
+  .notes {
+    width: 110%;
+  }
+  .kontakt {
+    margin-top: -15%;
+  }
+  .kontakt_text {
+    margin-top: -78%;
+    left: 4%;
+  }
+  .kontakt p {
+    font-size: 1.7rem;
+  }
+  .kontakt h5 {
+    font-size: 2.4rem;
+    padding-bottom: 40px;
+  }
 }
