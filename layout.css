@@ -1,0 +1,10 @@
+@media (min-width: 1000px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .tema2_img {
+    order: 1;
+  }
+}
