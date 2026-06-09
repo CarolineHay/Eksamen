@@ -11,9 +11,18 @@
     margin-inline: 10%;
   }
   .portfolio {
-    width: 60%;
-    padding-bottom: 20px;
-    margin-top: 20px;
+    width: 60% !important; /* Keeps your preferred 60% size */
+    margin: 20px auto 0 auto !important;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
   }
 
   .menu_desktop {
@@ -45,6 +54,11 @@
     font-size: 1.5rem;
   }
 
+  h1 {
+    font-size: 3rem;
+    padding-block: 40px;
+  }
+
   .tema2 {
     background-image: url(illutrationer/tema2_folder.svg);
   }
@@ -63,8 +77,39 @@
   .tema5 {
     background-position: center;
     width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  .tema2 h2,
+  .tema4 h2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 28px;
   }
 
+  .tema2 h3,
+  .tema4 h3 {
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .tema3 h2,
+  .tema5 h2 {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 73%;
+  }
+
+  .tema3 h3,
+  .tema5 h3 {
+    padding-top: 30px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
   .tema_tekst p {
     max-width: 65ch;
   }
