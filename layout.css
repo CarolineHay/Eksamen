@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
+    margin-top: 180px;
   }
   .tema2_img,
   .tema3_img,
@@ -16,6 +17,18 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
+
+  .tema2_note_long h3,
+  .tema3_note h3,
+  .tema3_note_long h3,
+  .tema4_note h3,
+  .tema4_note_long h3,
+  .tema5_note_long h3,
+  .mig h3,
+  .semester1 h3 {
+    font-size: 1.5rem;
+  }
+
   main {
     margin-inline: 10%;
   }
@@ -51,7 +64,7 @@
     place-self: center;
   }
   .text_layer-1 {
-    top: 15%;
+    top: 25%;
   }
   .text_layer-1 h1 {
     font-size: 3rem;
@@ -63,9 +76,41 @@
     font-size: 1.5rem;
   }
 
+  .text_layer-2 {
+    left: 12%;
+    top: 5%;
+  }
+  .text_layer-4 {
+    left: 14%;
+    top: 4%;
+  }
+  .text_layer-3 {
+    left: 77%;
+    top: 5%;
+  }
+  .text_layer-5 {
+    left: 76%;
+    top: 4%;
+  }
   h1 {
+    font-size: 3.5rem;
+    padding-bottom: 40px;
+  }
+
+  .tema4_h1 {
     font-size: 3rem;
-    padding-block: 40px;
+  }
+
+  .tema4_h1 span {
+    font-size: 3.5rem;
+  }
+
+  .ommig_h1 {
+    font-size: 4rem;
+  }
+
+  .ned_afsnit {
+    padding-top: 70px;
   }
 
   .tema2 {
@@ -130,16 +175,16 @@
   .tema4_note,
   .tema5_note {
     padding-right: 70px;
-    padding-left: 70px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 90px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 
   .tema2_note_long,
   .tema3_note_long,
   .tema4_note_long {
     padding-right: 70px;
-    padding-left: 70px;
+    padding-left: 90px;
     padding-top: 70px;
     padding-bottom: 80px;
   }
@@ -153,24 +198,38 @@
   .tema5_img,
   .tema5_img_galleri {
     width: 100%;
+    margin-top: 40px;
   }
 
   .mig,
   .semester1 {
-    background-image: url(illutrationer/SVG/notepink_desk.svg);
-    margin: 0;
+    background-image: url(illutrationer/SVG/notepink_desk2.svg);
   }
 
-  .mig {
-    padding-left: 100px;
+  .kompetencer {
+    margin-top: 100px;
+  }
+
+  .ikoner {
+    width: 25%;
+  }
+  .skala {
+    width: 80%;
+    margin: 0;
   }
 
   .portrait_wrapper {
     width: 40%;
   }
-
-  .tema4 footer {
-    margin-top: 150px;
+  .om_mig {
+    left: 54%;
+    bottom: 5%;
+  }
+  .om_mig p {
+    font-size: 1.5rem;
+  }
+  footer {
+    margin-top: 250px;
   }
 
   footer a {
@@ -180,7 +239,7 @@
     width: 110%;
   }
   .kontakt {
-    margin-top: -15%;
+    margin-top: -18%;
   }
   .kontakt_text {
     margin-top: -78%;
@@ -192,5 +251,45 @@
   .kontakt h5 {
     font-size: 2.4rem;
     padding-bottom: 40px;
+  }
+
+  .tema2_site {
+    background-image: url(illutrationer/link2_tema2.svg);
+  }
+  .tema3_site {
+    background-image: url(illutrationer/link2_tema3.svg);
+  }
+  .tema4_site {
+    background-image: url(illutrationer/link2_tema4.svg);
+  }
+  .tema5_site {
+    background-image: url(illutrationer/link2_tema5.svg);
+  }
+
+  .tema2_site,
+  .tema3_site,
+  .tema4_site,
+  .tema5_site {
+    background-size: 20%;
+    background-position: center;
+    padding-block: 80px;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: -50px;
+  }
+
+  .tekst_header h2 {
+    font-size: 2.5rem;
+  }
+
+  .tema2_site a,
+  .tema3_site a,
+  .tema4_site a,
+  .tema5_site a {
+    text-decoration: none;
+    font-family: var(--font-family-tekst);
+    font-size: 1.8rem;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
   }
 }
