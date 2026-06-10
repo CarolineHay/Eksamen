@@ -2,17 +2,26 @@
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 5rem;
   }
-  .tema2_img {
+  .tema2_img,
+  .tema3_img,
+  .tema4_img,
+  .tema5_img {
     order: 1;
+  }
+  .mig,
+  .semester1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
   main {
     margin-inline: 10%;
   }
   .portfolio {
-    width: 60% !important; /* Keeps your preferred 60% size */
-    margin: 20px auto 0 auto !important;
+    width: 60%;
+    margin: 20px auto 0 auto;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -20,8 +29,8 @@
   }
 
   .portfolio img {
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
     display: block;
   }
 
@@ -84,7 +93,7 @@
   .tema4 h2 {
     font-size: 25px;
     font-weight: 500;
-    padding-left: 28px;
+    padding-left: 27px;
   }
 
   .tema2 h3,
@@ -98,21 +107,66 @@
   .tema3 h2,
   .tema5 h2 {
     padding-top: 15px;
+    padding-right: 27px;
     font-size: 20px;
     font-weight: 500;
-    padding-left: 73%;
+    font-size: 25px;
+    max-width: 65ch;
   }
 
   .tema3 h3,
   .tema5 h3 {
-    padding-top: 30px;
-    padding-left: 14px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding-left: 0;
     font-size: 20px;
     font-weight: 500;
   }
   .tema_tekst p {
     max-width: 65ch;
+  }
+
+  .tema2_note,
+  .tema3_note,
+  .tema4_note,
+  .tema5_note {
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .tema2_note_long,
+  .tema3_note_long,
+  .tema4_note_long {
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .tema2_img,
+  .tema2_img_galleri,
+  .tema3_img,
+  .tema3_img_galleri,
+  .tema4_img,
+  .tema4_img_galleri,
+  .tema5_img,
+  .tema5_img_galleri {
+    width: 100%;
+  }
+
+  .mig,
+  .semester1 {
+    background-image: url(illutrationer/SVG/notepink_desk.svg);
+    margin: 0;
+  }
+
+  .mig {
+    padding-left: 100px;
+  }
+
+  .portrait_wrapper {
+    width: 40%;
   }
 
   .tema4 footer {
